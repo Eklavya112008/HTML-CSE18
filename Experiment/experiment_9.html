@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Card</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            margin:0;
+            background: #f5f5f5;
+            padding:20px;
+        }
+        h2{
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+
+        }
+        .card{
+            background:#cdbcbc;
+            border-radius:8px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+            padding:16px;
+            text-align: center;
+        }
+        .card img{
+            width:100%;
+            height: 150px;
+            object-fit:cover;
+            border-radius: 6px;
+            margin-bottom:10px;
+        }
+        .card p{
+            font-size:14px;
+            color:#4b4b4b;
+            margin:4px 0;
+        }
+        .card h3{
+            font-size: 18px;
+            margin:8px 0;
+        }
+        .price{
+            font-weight:bold;
+            color:#007bff;
+
+        }
+        @media(max-width:1024px){
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media(max-width:600px){
+            .grid{
+                grid-template-columns:1fr ;
+            }
+        }
+        .img{
+            width: 100px;
+            height:120px;
+        }
+
+    </style>
+</head>
+<body>
+   <h2>Responsive Product Card</h2>
+   <div class="grid">
+   <div class="card">
+    <img src="https://geekculture.co/wp-content/uploads/2018/02/blackpanther-shoe.jpg" alt="product">
+    <h3>Product 1</h3>
+    <p>High-Quality item with great features.</p>
+    <p class="price">&#8377;2499</p>
+   </div>
+
+   <div class="card">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.OQvgRbgVC734DIR-kxn-cQHaEl?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="product 2">
+    <h3>Product 2</h3>
+    <p>Durable and Style for daily use.</p>
+    <p class="price">&#8377;1,299</p>
+   </div>
+   <div class="card">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.NZosBNOz-MotsK4WSHjYjwAAAA?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product 4">
+    <h3>Product 3</h3>
+    <P>Trendy design with premium Quality</P>
+    <p class="price">&#8377;1100</p>
+   </div>
+
+   </div> 
+</body>
+</html>
